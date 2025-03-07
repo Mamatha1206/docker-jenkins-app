@@ -3,15 +3,15 @@ pipeline {
   environment {
     DOCKER_IMAGE = "app-image"
     DOCKER_TAG = "latest"
-    DOCKER_REPO = "default-repo/app-image"
-    DOCKER_CREDENTIALS_ID="docker-credentials-id"
+    DOCKER_REPO = "mamatha0124/app-image"
+    DOCKER_CREDENTIALS_ID=""
     CONTAINER_NAME="local-container"
     CONTAINER_NAME1="server-container"
   }
   stages {
     stage('Clone Repository') {
       steps{
-        git 'https://github.com/your-username/docker-jenkins-app.git'
+        git 'https://github.com/Mamatha1206/docker-jenkins-app.git'
       }
     }
     stage('Build Docker Image') {
