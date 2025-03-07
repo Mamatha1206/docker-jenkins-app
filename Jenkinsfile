@@ -4,7 +4,7 @@ pipeline {
     DOCKER_IMAGE = "app-image"
     DOCKER_TAG = "latest"
     DOCKER_REPO = "mamatha0124/app-image"
-    DOCKER_CREDENTIALS_ID=""
+    DOCKER_CREDENTIALS_ID="dckr_pat_yWxgRJd9pHl4fJONjrJXjs57GFI"
     CONTAINER_NAME="local-container"
     CONTAINER_NAME1="server-container"
   }
