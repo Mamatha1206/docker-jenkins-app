@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git ''
+                git 'https://github.com/Mamatha1206/docker-jenkins-app.git'
             }
         }
         stage('Docker Login') {
