@@ -24,16 +24,14 @@ pipeline {
                 }
             }
         }
-        stage('Docker Login') {
+        stage('Build Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', 'dckr_pat_yWxgRJd9pHl4fJONjrJXjs57GFI') {
-                        echo "Docker Login Successful"
-                    }
+                    sh "docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG} ."
                 }
             }
         }
-
+    
         stage('Run Container Locally') {
             steps {
                 script {
